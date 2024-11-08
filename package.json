@@ -1,0 +1,35 @@
+{
+  "name": "ischive-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build ",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"src/**/*.{tsx,tx}\""
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "embla-carousel-autoplay": "^8.0.0-rc15",
+    "embla-carousel-react": "^8.0.0-rc15",
+    "heroicons": "^2.0.18",
+    "next": "14.2.10",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "20.9.4",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "gh-pages": "^6.1.0",
+    "postcss": "^8",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.3.2"
+  }
+}

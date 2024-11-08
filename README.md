@@ -1,2 +1,1 @@
-# ischive
-2024-2 ischive
+# Instagram, YouTube, Naver, ISChive Let's GO
