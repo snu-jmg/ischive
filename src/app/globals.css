@@ -1,0 +1,99 @@
+/* 
+globals.css:
+  Describes styles applied globally
+  Use '@layer base' to add default base styles for specific HTML elements
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font settings */
+@layer base {
+  /* Pretendard */
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/assets/font/Pretendard-Thin.woff") format("woff");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/assets/font/Pretendard-Light.woff") format("woff");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/assets/font/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Pretendard";
+    src: url("/assets/font/Pretendard-ExtraBold.woff") format("woff");
+    font-weight: 800;
+  }
+
+  /* WideNerd */
+  @font-face {
+    font-family: "MonoplexWideNerd";
+    src: url("/assets/font/MonoplexKRWideNerd-ExtraLight.ttf")
+      format("truetype");
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: "MonoplexWideNerd";
+    src: url("/assets/font/MonoplexKRWideNerd-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "MonoplexWideNerd";
+    src: url("/assets/font/MonoplexKRWideNerd-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "MonoplexWideNerd";
+    src: url("/assets/font/MonoplexKRWideNerd-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "MonoplexWideNerd";
+    src: url("/assets/font/MonoplexKRWideNerd-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "MonoplexWideNerd";
+    src: url("/assets/font/MonoplexKRWideNerd-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+
+  /*Cafe24SsurroundAir*/
+  @font-face {
+    font-family: "Cafe24SsurroundAir";
+    src: url("/assets/font/Cafe24SsurroundAir-v1.1.ttf") format("truetype");
+    font-weight: 100;
+  }
+
+  /* header -> div : MonoplexWideNerd, light */
+  header div {
+    @apply font-MonoplexWideNerd font-normal;
+  }
+
+  /* h1: MonoplexWideNerd, bold */
+  h1 {
+    @apply mx-4 font-MonoplexWideNerd text-6xl font-bold md:text-7xl;
+  }
+
+  /* h2: Pretendard, extrabold */
+  h2 {
+    @apply mx-4 font-Pretendard text-lg font-extrabold sm:text-2xl md:my-1 md:text-3xl;
+  }
+
+  /* h4: MonoplexWideNerd, bold */
+  h4 {
+    @apply font-MonoplexWideNerd text-base font-bold sm:text-xl md:text-2xl;
+  }
+
+  /* footer -> p : Pretendard, light */
+  footer p {
+    @apply font-Pretendard font-light;
+  }
+}
